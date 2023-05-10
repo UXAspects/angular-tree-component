@@ -19,6 +19,14 @@ No Warranties and Limitation of Liability. Every effort has been made to ensure 
   <version>1.0.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
+  <properties>
+    <maven.install.skip>true</maven.install.skip>
+    <skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
+    <skipLicenseHeadersCheck>true</skipLicenseHeadersCheck>
+    <copyrightYear>2023</copyrightYear>
+    <dockerHubPublic>docker.io</dockerHubPublic>
+  </properties>
+
 
 <build>
     <plugins>
