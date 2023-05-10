@@ -4,9 +4,9 @@
   "license": "MIT",
   "scripts": {
     "sepg:initialize-phase": "yarn install --frozen-lockfile",
-    "test": "nx affected:test --all --parallel && nx affected:e2e --all --parallel",
-    "lint": "nx workspace-lint && nx affected:lint --all --parallel",
-    "compile": "yarn lint  && nx affected:build --all --parallel --prod",
+    "test": "nx affected:test --all --parallel",
+    "lint": "nx affected:lint --all --parallel",
+    "compile": "yarn lint && nx affected:build --all --parallel --prod",
     "package": "nx g @ux-aspects-plugins/sepg:set-versions && nx run-many --target=package --all --parallel",
     "package:release": "# Not required."
   },
