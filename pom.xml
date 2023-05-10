@@ -90,7 +90,7 @@ No Warranties and Limitation of Liability. Every effort has been made to ensure 
             <configuration>
               <executable>yarn</executable>
               <arguments>
-                <argument>test:run-ci</argument>
+                <argument>test</argument>
               </arguments>
             </configuration>
           </execution>
