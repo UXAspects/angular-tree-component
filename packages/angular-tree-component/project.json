@@ -8,7 +8,9 @@
   "targets": {
     "build": {
       "executor": "@nx/angular:package",
-      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/dist/{projectRoot}"
+      ],
       "options": {
         "project": "packages/angular-tree-component/ng-package.json"
       },
@@ -24,7 +26,9 @@
     },
     "test": {
       "executor": "@nx/jest:jest",
-      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "outputs": [
+        "{workspaceRoot}/coverage/{projectRoot}"
+      ],
       "options": {
         "jestConfig": "packages/angular-tree-component/jest.config.ts",
         "passWithNoTests": true
@@ -38,13 +42,28 @@
     },
     "lint": {
       "executor": "@nx/linter:eslint",
-      "outputs": ["{options.outputFile}"],
+      "outputs": [
+        "{options.outputFile}"
+      ],
       "options": {
         "lintFilePatterns": [
           "packages/angular-tree-component/**/*.ts",
           "packages/angular-tree-component/**/*.html"
         ]
       }
+    },
+    "package": {
+      "executor": "@ux-aspects-plugins/sepg:package",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "options": {
+        "distPath": "dist/packages/angular-tree-component",
+        "outputPath": "target/packages/@ux-aspects/angular-tree-component"
+      },
+      "dependsOn": [
+        "build"
+      ]
     }
   }
 }

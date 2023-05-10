@@ -3,5 +3,7 @@
   "dest": "../../dist/packages/angular-tree-component",
   "lib": {
     "entryFile": "src/index.ts"
-  }
+  },
+  "assets": ["css/angular-tree-component.css"],
+  "allowedNonPeerDependencies": ["lodash-es", "mobx"]
 }

@@ -1,0 +1,9 @@
+SEPG_BUILD_ENV_IMAGE=uxaspects/buildenv-node16:1.0.0
+DISABLE_JIRA_NOTIFICATION=TRUE
+LIST_RELEASED_ARTIFACT_IN_GITHUB_RELEASE=FALSE
+
+GENERIC_CI_TARGET_URL=${genericRepoMgr}/saas-npm-dev-local/${path}/${filename}
+GENERIC_TARGET_URL=${sepgStagingRepo}/saas-npm-release-local/${path}/${filename}
+GENERIC_ARTIFACTS=target/packages/**/*.tgz
+GENERIC_EXPECTED_ARTIFACT_COUNT=0
+GENERIC_CI_ADDITIONAL_PROPERTIES=npm.disttag=branch${devBranchName}
