@@ -7,3 +7,4 @@ GENERIC_TARGET_URL=${sepgStagingRepo}/saas-npm-release-local/${path}/${filename}
 GENERIC_ARTIFACTS=target/packages/**/*.tgz
 GENERIC_EXPECTED_ARTIFACT_COUNT=0
 GENERIC_CI_ADDITIONAL_PROPERTIES=npm.disttag=branch${devBranchName}
+ENABLE_SONARQUBE_SCANNING=FALSE
