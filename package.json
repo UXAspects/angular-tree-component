@@ -7,7 +7,8 @@
     "test": "nx affected:test --all --parallel",
     "lint": "nx affected:lint --all --parallel",
     "compile": "yarn lint && nx affected:build --all --parallel --prod",
-    "package": "nx g @ux-aspects-plugins/sepg:set-versions && nx run-many --target=package --all --parallel",
+    "setversion": "nx g @ux-aspects-plugins/sepg:set-versions",
+    "package": "nx run-many --target=package --all --parallel",
     "package:release": "# Not required."
   },
   "private": true,
