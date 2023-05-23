@@ -6,7 +6,7 @@
     "@angular/common": ">=16.0.0",
     "@angular/core": ">=16.0.0",
     "rxjs": ">=6.6.0",
-    "mobx": ">=6.0.0"
+    "mobx": "4.14.1"
   },
   "dependencies": {
     "tslib": "^2.3.0"
