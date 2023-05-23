@@ -1,8 +1,7 @@
-!not-ready-for-release!
-
 #### Version Number
+
 ${version-number}
 
 #### New Features
 
-#### Known Issues
+- Resolving issue with importing the stylesheet

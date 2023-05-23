@@ -8,6 +8,11 @@
     "rxjs": ">=6.6.0",
     "mobx": ">=6.0.0"
   },
+  "exports": {
+    "./css/angular-tree-component.css": {
+      "style": "./css/angular-tree-component.css"
+    }
+  },
   "dependencies": {
     "tslib": "^2.3.0"
   },
