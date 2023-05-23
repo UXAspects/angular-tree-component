@@ -16,7 +16,7 @@ No Warranties and Limitation of Liability. Every effort has been made to ensure 
 
   <groupId>com.microfocus.caf</groupId>
   <artifactId>angular-tree-component</artifactId>
-  <version>1.1.0-8</version>
+  <version>1.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
